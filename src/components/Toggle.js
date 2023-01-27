@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
+//Toggle component
 const Toggle = ({handleNavToggle}) => {
-    const StyledToggle = styled(FaTimes)`
+
+    //Toggle button's style
+    const StyledToggle = styled(FaBars)`
     position: fixed;
     top: 5%;
     right: 4%;
@@ -15,6 +18,8 @@ const Toggle = ({handleNavToggle}) => {
     font-size: 2rem;
     cursor: pointer;
     `;
+
+    //returns Toggle button
     return (
         <StyledToggle onClick={handleNavToggle} />
     );

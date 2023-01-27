@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+//Contact page
 const Contact = () => {
-    const StyledContactPage = styled.div`
+
+    //StyledContact uses styled div-element 
+    const StyledContact = styled.div`
     min-height: 100vh;
     width: 100vw;
     background-color: #282c34
@@ -12,9 +15,10 @@ const Contact = () => {
     justify-content: center;
     align-items: center;`;
 
+    //Heading uses styled h1-element 
     const Heading = styled.h1`
     font-size: clamp(3rem, 5vw, 7vw);
-    color: #eee;
+    color: red;
     font-weight: 700;
     margin: 0;
     padding: 0;
@@ -25,11 +29,11 @@ const Contact = () => {
    -ms-user-select: none; /* Internet Explorer/Edge */
 `;
 
-    /*user select tähän mikäli tarvetta*/
+    //returns styled contact page
     return (
-        <StyledContactPage>
+        <StyledContact>
             <Heading>Contact me!</Heading>
-        </StyledContactPage>
+        </StyledContact>
     );
 }
 export default Contact

@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-
+//Projects page
 const Projects = () => {
-    const StyledProjectsPage = styled.div`
+
+    //StyledProjects uses styled div-element 
+    const StyledProjects = styled.div`
     min-height: 100vh;
     width: 100vw;
     background-color: #282c34
@@ -13,9 +15,10 @@ const Projects = () => {
     justify-content: center;
     align-items: center;`;
 
+    //Heading uses styled h1-element 
     const Heading = styled.h1`
     font-size: clamp(3rem, 5vw, 7vw);
-    color: #eee;
+    color: red;
     font-weight: 700;
     margin: 0;
     padding: 0;
@@ -26,12 +29,11 @@ const Projects = () => {
    -ms-user-select: none; /* Internet Explorer/Edge */
 `;
 
-    /*user select tähän mikäli tarvetta*/
-
+    //returns styled projects page
     return (
-        <StyledProjectsPage>
+        <StyledProjects>
             <Heading>My projects</Heading>
-        </StyledProjectsPage>
+        </StyledProjects>
     );
 }
 export default Projects

@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import {FaTimes} from 'react-icons/fa'
 
+//Menu component
 const Menu = ({handleNavToggle}) => {
+
+    //Menu component's style
     const StyledMenu = styled.div`
     position: fixed;
     top: 0;
@@ -22,6 +25,7 @@ const Menu = ({handleNavToggle}) => {
     align-items: center;
     `;
 
+    //Link component's style
     const StyledLink = styled(Link)`
     color: #222;
     text-decoration: none;
@@ -32,6 +36,7 @@ const Menu = ({handleNavToggle}) => {
     
     `;
 
+    //CloseToggle button's style
     const CloseToggle = styled(FaTimes)`
     position: fixed;
     top: 5%;
@@ -45,10 +50,10 @@ const Menu = ({handleNavToggle}) => {
     cursor: pointer;
     `;
 
-    
+    //returns responsive menu
     return (
         <StyledMenu>
-            <StyledLink to="/">Home</StyledLink>
+            <StyledLink to="/portfolio">Home</StyledLink>
             <StyledLink to="/about">About</StyledLink>
             <StyledLink to="/projects">Projects</StyledLink>
             <StyledLink to="/contact">Contact</StyledLink>

@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 import React from "react";
 
+//Home page
 const Home = () => {
-    const StyledHomePage = styled.div`
+
+    //StyledHome uses styled div-element 
+    const StyledHome = styled.div`
     min-height: 100vh;
     width: 100vw;
     background-color: #282c34
@@ -13,9 +16,10 @@ const Home = () => {
     align-items: center;
     `;
 
+    //Heading uses styled h1-element 
     const Heading = styled.h1`
     font-size: clamp(3rem, 5vw, 7vw);
-    color: #eee;
+    color: red;
     font-weight: 700;
     margin: 0;
     padding: 0;
@@ -26,12 +30,11 @@ const Home = () => {
    -ms-user-select: none; /* Internet Explorer/Edge */
 `;
 
-    /*user select tähän mikäli tarvetta*/
-
+    //returns styled home page
     return (
-        <StyledHomePage>
+        <StyledHome>
             <Heading>Hi, my name is Iida and this is my portfolio</Heading>
-        </StyledHomePage>
+        </StyledHome>
     );
 }
 

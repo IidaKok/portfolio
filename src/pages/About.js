@@ -1,9 +1,11 @@
 import React from "react";
 import styled from 'styled-components';
 
-
+//About page
 const About = () => {
-    const StyledAboutPage = styled.div`
+
+    //StyledAbout uses styled div-element 
+    const StyledAbout = styled.div`
     min-height: 100vh;
     width: 100vw;
     background-color: #282c34
@@ -13,6 +15,7 @@ const About = () => {
     justify-content: center;
     align-items: center;`;
 
+    //Heading uses styled h1-element 
     const Heading = styled.h1`
     font-size: clamp(3rem, 5vw, 7vw);
     color: red;
@@ -26,10 +29,11 @@ const About = () => {
    -ms-user-select: none; /* Internet Explorer/Edge */
 `;
 
+    //returns styled about page
     return (
-        <StyledAboutPage>
+        <StyledAbout>
             <Heading>Who am I?</Heading>
-        </StyledAboutPage>
+        </StyledAbout>
     );
 }
 
