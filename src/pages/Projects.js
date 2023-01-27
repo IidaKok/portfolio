@@ -8,12 +8,12 @@ const Projects = () => {
     const StyledProjects = styled.div`
     min-height: 100vh;
     width: 100vw;
-    background-color: #282c34
-    
+    background-color: #282c34;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;`;
+    align-items: center;
+    `;
 
     //Heading uses styled h1-element 
     const Heading = styled.h1`

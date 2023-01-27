@@ -10,7 +10,7 @@ const Menu = ({handleNavToggle}) => {
     const StyledMenu = styled.div`
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
     @media screen and (min-width: 790px) {
@@ -33,15 +33,18 @@ const Menu = ({handleNavToggle}) => {
     font-family: impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     transition: .2s all ease-in-out;
     
-    
+    &:hover {
+        transition: .2s all ease-in-out;
+        color: orangered;
+    }
     `;
 
     //CloseToggle button's style
     const CloseToggle = styled(FaTimes)`
     position: fixed;
     top: 5%;
-    right: 4%;
-    background: #222;
+    left: 4%;
+    background: red;
     color: #fff;
     padding: .75rem;
     display: flex;
@@ -53,10 +56,10 @@ const Menu = ({handleNavToggle}) => {
     //returns responsive menu
     return (
         <StyledMenu>
-            <StyledLink to="/portfolio">Home</StyledLink>
-            <StyledLink to="/about">About</StyledLink>
-            <StyledLink to="/projects">Projects</StyledLink>
-            <StyledLink to="/contact">Contact</StyledLink>
+            <StyledLink className="animate__animated animate__fadeInLeft"  to="/portfolio">Home</StyledLink>
+            <StyledLink className="animate__animated animate__fadeInLeft" to="/about">About</StyledLink>
+            <StyledLink className="animate__animated animate__fadeInLeft" to="/projects">Projects</StyledLink>
+            <StyledLink className="animate__animated animate__fadeInLeft" to="/contact">Contact</StyledLink>
             <CloseToggle onClick={handleNavToggle} />
         </StyledMenu>
     );

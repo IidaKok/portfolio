@@ -9,8 +9,8 @@ const Toggle = ({handleNavToggle}) => {
     const StyledToggle = styled(FaBars)`
     position: fixed;
     top: 5%;
-    right: 4%;
-    background: #222;
+    left: 4%;
+    background: red;
     color: #fff;
     padding: .75rem;
     display: flex;
@@ -21,7 +21,7 @@ const Toggle = ({handleNavToggle}) => {
 
     //returns Toggle button
     return (
-        <StyledToggle onClick={handleNavToggle} />
+        <StyledToggle className="animate__animated animate__fadeInLeft" onClick={handleNavToggle} />
     );
 }
 export default Toggle

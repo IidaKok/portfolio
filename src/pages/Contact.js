@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+
 //Contact page
 const Contact = () => {
 
@@ -8,12 +9,12 @@ const Contact = () => {
     const StyledContact = styled.div`
     min-height: 100vh;
     width: 100vw;
-    background-color: #282c34
-    
+    background-color: #282c34;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;`;
+    align-items: center;
+    `;
 
     //Heading uses styled h1-element 
     const Heading = styled.h1`
@@ -29,10 +30,19 @@ const Contact = () => {
    -ms-user-select: none; /* Internet Explorer/Edge */
 `;
 
+    const Content = styled.div`
+    color: #eee;
+    font-size: clamp(1.5rem,2vw, 4vw);
+    
+    `;
+
     //returns styled contact page
     return (
         <StyledContact>
-            <Heading>Contact me!</Heading>
+            <Content>
+                <Heading>Contact me!</Heading>
+                
+            </Content>
         </StyledContact>
     );
 }
