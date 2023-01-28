@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import {FaTimes} from 'react-icons/fa';
 import { FaBars } from "react-icons/fa";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 //Menu
 const StyledMenu = styled.div`
@@ -82,4 +86,18 @@ color: black;
 justify-content: center;
 `;
 
-export {CloseToggle, StyledLink, StyledMenu, StyledToggle, SkillsList, SkillsListItem}
+//Project
+const StyledButton = styled(Button)``;
+
+const StyledCard = styled(Card)`
+border: dark;
+width: 18rem;
+background-color: #2e151b;`;
+
+const StyledRow = styled(Row)`
+color: white;
+`;
+
+const StyledCol = styled(Col)``;
+
+export {CloseToggle, StyledLink, StyledMenu, StyledToggle, SkillsList, SkillsListItem, StyledCard, StyledButton, StyledCol, StyledRow}

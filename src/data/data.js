@@ -57,6 +57,19 @@ const skills = [
         icon: <SiMysql />
     }
 ]
+const projects = [
+    {
+        name: "Portfolio",
+        description: "This is the website",
+        github: "https://github.com/IidaKok/portfolio",
+        view: "https://iidakok.github.io/portfolio/"
+    },
+    {
+        name: "Ninja's website",
+        description: "I created this website in Web and mobile interfaces course. It's responsive and designed for kids.",
+        github: "https://github.com/IidaKok/Iidakok.github.io",
+        view: "https://iidakok.github.io/"
+    }
+]
 
-
-export {skills, about}
+export {skills, about, projects}
