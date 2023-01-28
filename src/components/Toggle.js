@@ -21,7 +21,7 @@ const Toggle = ({handleNavToggle}) => {
 
     //returns Toggle button
     return (
-        <StyledToggle className="animate__animated animate__fadeInLeft" onClick={handleNavToggle} />
+        <StyledToggle onClick={handleNavToggle} />
     );
 }
 export default Toggle
