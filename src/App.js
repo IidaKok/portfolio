@@ -32,9 +32,9 @@ function App() {
         {navToggled ? <Menu handleNavToggle={handleNavToggle} /> : null}
         <Routes>
                 {<Route exact path="/portfolio" element={<Home />} />}
-                {<Route path="/about" element={<About />} />}
-                {<Route path="/projects" element={<Projects />} />}
-                {<Route path="/contact" element={<Contact />} />}
+                {<Route path="/portfolio/about" element={<About />} />}
+                {<Route path="/portfolio/projects" element={<Projects />} />}
+                {<Route path="/portfolio/contact" element={<Contact />} />}
             </Routes>
       </Router>
     </div>
