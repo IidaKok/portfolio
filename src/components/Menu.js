@@ -5,10 +5,10 @@ const Menu = ({handleNavToggle}) => {
 
     return (
         <StyledMenu>
-            <StyledLink className="animate__animated animate__fadeInLeft"  to="/portfolio">Home</StyledLink>
-            <StyledLink className="animate__animated animate__fadeInLeft" to="/portfolio/about">About</StyledLink>
-            <StyledLink className="animate__animated animate__fadeInLeft" to="/portfolio/projects">Projects</StyledLink>
-            <StyledLink className="animate__animated animate__fadeInLeft" to="/portfolio/contact">Contact</StyledLink>
+            <StyledLink className="animate__animated animate__fadeInLeft"  to="/">Home</StyledLink>
+            <StyledLink className="animate__animated animate__fadeInLeft" to="/about">About</StyledLink>
+            <StyledLink className="animate__animated animate__fadeInLeft" to="/projects">Projects</StyledLink>
+            <StyledLink className="animate__animated animate__fadeInLeft" to="/contact">Contact</StyledLink>
             <CloseToggle onClick={handleNavToggle} />
         </StyledMenu>
     );
