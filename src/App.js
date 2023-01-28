@@ -28,13 +28,14 @@ function App() {
   return (
     <div className="App">
       <Toggle handleNavToggle={handleNavToggle} />
+
       <Router>
         {navToggled ? <Menu handleNavToggle={handleNavToggle} /> : null}
         <Routes>
-                {<Route path="/" element={<Home />} />}
-                {<Route path="/about" element={<About />} />}
-                {<Route path="/projects" element={<Projects />} />}
-                {<Route path="/contact" element={<Contact />} />}
+                {<Route exact path="/portfolio" element={<Home />} />}
+                {<Route exact path="/portfolio/about" element={<About />} />}
+                {<Route exact path="/portfolio/projects" element={<Projects />} />}
+                {<Route exact path="/portfolio/contact" element={<Contact />} />}
             </Routes>
       </Router>
     </div>
