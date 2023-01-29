@@ -1,6 +1,7 @@
 import {FaReact, FaNode, FaLinux, FaGit, FaGithub, FaJava, FaHtml5, FaCss3, } from 'react-icons/fa';
 import {SiDotnet, SiVisualstudio, SiJavascript, SiMysql} from 'react-icons/si';
 
+
 const about = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non tempus neque." + 
         "Pellentesque quis vulputate est. Duis non aliquet enim. Morbi vel molestie risus, euismod blandit nibh. Vivamus molestie sem arcu, " + 
@@ -69,6 +70,12 @@ const projects = [
         description: "I created this website in Web and mobile interfaces course. It's responsive and designed for kids.",
         github: "https://github.com/IidaKok/Iidakok.github.io",
         view: "https://iidakok.github.io/"
+    },
+    {
+        name: "Mökkien hallinta",
+        description: "Ohjelmistotuotannon kurssin projektityö. Minun vastuullani oli varausten hallinta. ",
+        github: "https://github.com/turunena/OhjelmistotuotantoProjekti",
+        view: "Ehkä linkit tiedostoihin jotka olen kirjoittanut?"
     }
 ]
 

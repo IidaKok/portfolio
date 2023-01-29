@@ -1,24 +1,23 @@
 import React from "react";
-import { StyledProjects, Heading, StyledDiv } from "../styles/ProjectsStyle";
 import Project from "../components/Project";
 import { projects } from "../data/data";
-import { StyledRow } from "../components/ComponentStyle";
+import { Heading } from "../styles/Common";
+import { ProjectPage, StyledRow } from "../styles/ProjectsStyle";
+
 
 const Projects = () => {
     if (!projects.length) {
         return null;
     }
     return (
-        <StyledProjects>
-            <Heading>My projects</Heading>
-            <StyledDiv>
+            <ProjectPage>
+                <Heading>My projects</Heading>
                 <StyledRow>
                     {projects.map((project) => (
                         <Project project={project} />
                     ))}
                 </StyledRow>
-            </StyledDiv>
-        </StyledProjects>
+            </ProjectPage>
     );
 }
 export default Projects

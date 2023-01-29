@@ -2,10 +2,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import {FaTimes} from 'react-icons/fa';
 import { FaBars } from "react-icons/fa";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
+
 
 //Menu
 const StyledMenu = styled.div`
@@ -14,19 +12,19 @@ top: 0;
 left: 0;
 height: 100vh;
 width: 100%;
-background-color: rgba(255,255,255,.95);
-z-index: 99;
+background-color: #282c34;
+z-index: 1;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 
 @media screen and (min-width: 790px) {
-    width: 60%;
+    width: 40%;
 }`;
 
 const StyledLink = styled(Link)`
-color: #222;
+color: #c5c6c7;
 text-decoration: none;
 font-size: clamp(3rem, 4vw, 6vw);
 font-family: impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -34,70 +32,58 @@ transition: .2s all ease-in-out;
 
 &:hover {
     transition: .2s all ease-in-out;
-    color: orangered;
+    color: #00ffff;
 }`;
 
 const CloseToggle = styled(FaTimes)`
 position: fixed;
 top: 5%;
 left: 4%;
-background: red;
 color: #fff;
-padding: .75rem;
-display: flex;
 place-items: center;
-font-size: 2rem;
+font-size: 30px;
 cursor: pointer;`;
-
-
 
 //Toggle
 const StyledToggle = styled(FaBars)`
 position: fixed;
 top: 5%;
 left: 4%;
-background: red;
 color: #fff;
-padding: .75rem;
-display: flex;
 place-items: center;
-font-size: 2rem;
+font-size: 30px;
 cursor: pointer;
+
+@media screen and (min-width: 1050px) {
+    visibility: visible;
+}
 `;
 
 
-//Skills
-const SkillsList = styled.ul`
-max-width: 450px;
-max-height: 350px;
-width: 100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-list-style-type: none;
-margin: 0;
-padding: 0;
-`;
 
-const SkillsListItem = styled.li`
-margin: 10px;
-font-size: 50px;
-color: black;
-justify-content: center;
-`;
+///////
+const List = styled.ul`
+list-style-type: none;`;
 
-//Project
-const StyledButton = styled(Button)``;
-
-const StyledCard = styled(Card)`
-border: dark;
-width: 18rem;
-background-color: #2e151b;`;
-
-const StyledRow = styled(Row)`
+const Item = styled.li`
+font-size: 30px;
 color: white;
-`;
+cursor: pointer;
+left: 0;`;
 
-const StyledCol = styled(Col)``;
+const BigscreenMenu = styled.div`
+position: fixed;
+left: 0;
+height: 100%;
+width: 8%;
+z-index: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
 
-export {CloseToggle, StyledLink, StyledMenu, StyledToggle, SkillsList, SkillsListItem, StyledCard, StyledButton, StyledCol, StyledRow}
+
+@media screen and (max-width: 1040px) {
+   visibility: hidden;
+}`;
+
+export {CloseToggle, StyledLink, StyledMenu, StyledToggle, BigscreenMenu, List, Item }

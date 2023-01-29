@@ -1,33 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Writer from '../components/Writer';
-import me from "../images/Me.jpg"
-import '../styles/Home.css';
-import {StyledHome, Picture, BtnBackground, Button, Heading} from "../styles/HomeStyles";
+import me from "../images/Me2.jpeg";
+import { StyledPage, Heading, Button } from "../styles/Common";
+import { Picture, Wrapper, StyledHome, Aside, StyledWriter } from "../styles/HomeStyles";
+
 
 //Home page
 const Home = () => {
 
   return (
-    <StyledHome>
-      <div className='context'>
-        <div className="wrapper">
-          <aside className="row typewriter-background ">
+    <StyledPage>
+      <StyledHome>
+        <Wrapper>
+          <Aside>
+            <h1>Hello, I am</h1>
             <Heading>
-              <Writer />
+              Iida Kokkonen
             </Heading>
-            <BtnBackground>
-              <Link to="/contact">
-                <Button>Contact me!</Button>
-              </Link>
-            </BtnBackground>
-          </aside>
-          <aside className="row picture-background ">
+            <StyledWriter/>
+            <Link to="/contact">
+              <Button>Contact me!</Button>
+            </Link>  
+          </Aside>
+          <Aside>
             <Picture src={me} />
-          </aside>
-        </div>
-      </div>
-    </StyledHome>
+          </Aside>
+        </Wrapper>
+      </StyledHome>
+    </StyledPage>
   )
 }
 

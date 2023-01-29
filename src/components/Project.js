@@ -1,26 +1,28 @@
-import { StyledCard, StyledButton } from "./ComponentStyle"
+import { StyledCard } from "../styles/ProjectsStyle";
+import { Button } from "../styles/Common";
 
 import React from "react";
 
 const Project = ({ project }) => {
     return (
         <>
-            <StyledCard>
+        <StyledCard>
+        <StyledCard.Title>{project.name}</StyledCard.Title>
                 <StyledCard.Body>
-                    <StyledCard.Title>{project.name}</StyledCard.Title>
+                    
                     <StyledCard.Text>{project.description}</StyledCard.Text>
-                    <StyledCard.Footer>
+                    
+                </StyledCard.Body>
+                <StyledCard.Footer variant="primary">
                         {project.github && (
-                            <a href = { project.github }><StyledButton>Github</StyledButton></a>
+                            <a href={project.github}><Button>Github</Button></a>
                         )}
                         {project.view && (
-                            <a href = { project.view}><StyledButton>View</StyledButton></a>
+                            <a href={project.view}><Button>View</Button></a>
                         )}
                     </StyledCard.Footer>
-                </StyledCard.Body>
             </StyledCard>
         </>
     )
 }
-
 export default Project

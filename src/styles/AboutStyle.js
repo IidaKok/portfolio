@@ -1,41 +1,48 @@
 import styled from 'styled-components';
 
-const StyledAbout = styled.div`
-min-height: 100vh;
-width: 100vw;
-background-color: #282c34;
+const SkillsList = styled.ul`
+max-width: 450px;
+max-height: 350px;
+width: 100%;
 display: flex;
-flex-direction: column;
+flex-wrap: wrap;
 justify-content: center;
-align-items: center;
-padding: 2em;
-margin: 0 auto;
-box-shadow: var(--shadow);
-transition: transform 0.2s linear;`;
-
-const Heading = styled.h1`
-font-size: clamp(3rem, 4vw, 6vw);
-font-weight: 500;
+list-style-type: none;
 margin: 0;
-padding: 0;
-display: flex;
-user-select: none; /* supported by Chrome and Opera */
--webkit-user-select: none; /* Safari */
--khtml-user-select: none; /* Konqueror HTML */
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* Internet Explorer/Edge */
-`;
+padding: 0;`;
 
-const StyledDiv = styled.div`
-position: relative;
-padding: 0px 10px;
-display: flex;
-flex-direction: column;
-align-items: center;
+const SkillsListItem = styled.li`
+margin: 10px;
+font-size: 50px;
+color: #1f2833;
 justify-content: center;
-width: 85%;
-margin: 20px;
-color: black;
-`;
+&:hover {
+    transform: translateY(-7px);
+}`;
+const Picture = styled.img`
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+border-radius: 50%;`;
 
-export { Heading, StyledAbout, StyledDiv }
+const Wrapper = styled.div`
+display: flex;
+flex-flow: row wrap;
+text-align: center;
+row-gap: 30px;
+>* {
+    padding: 10px;
+    flex: 1 100%;
+}`;
+
+const Aside = styled.div`
+top: 50px;
+text-align: center;
+
+@media screen and (min-width: 600px) {
+    flex: 1 0 0;
+    width: 400px;
+}`;
+
+export {SkillsList, SkillsListItem, Picture, Wrapper, Aside}

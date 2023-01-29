@@ -1,41 +1,37 @@
 import styled from "styled-components";
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
 
-
-//StyledProjects uses styled div-element 
-const StyledProjects = styled.div`
+const ProjectPage = styled.div`
 min-height: 100vh;
-width: 100vw;
-background-color: #282c34;
+width: 100%;
+
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-padding: 2em;
-margin: 0 auto;
+background-color: #0b0c10;
 box-shadow: var(--shadow);
-transition: transform 0.2s linear;`;
-
-const Heading = styled.h1`
-font-size: clamp(3rem, 4vw, 6vw);
-font-weight: 500;
-margin: 0;
-padding: 0;
-display: flex;
-user-select: none; /* supported by Chrome and Opera */
--webkit-user-select: none; /* Safari */
--khtml-user-select: none; /* Konqueror HTML */
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* Internet Explorer/Edge */`;
-
-const StyledDiv = styled.div`
-position: relative;
-padding: 0px 10px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 85%;
-margin: 20px;
+transition: transform 0.2s linear;
 `;
 
-export {StyledProjects, Heading, StyledDiv}
+const StyledCard = styled(Card)`
+border: 0.1px solid #c5c6c7;
+width: 18rem;
+background-color: #0b0c10;
+min-height: 250px;
+margin: 10px;
+padding: 10px;
+
+&:hover {
+    transform: translateY(-7px);
+}`;
+
+const StyledRow = styled(Row)`
+color: white;
+justify-content: center;
+padding-top: 50px;
+margin-right: 0;
+margin-left: 0;`;
+
+export {ProjectPage, StyledCard, StyledRow}

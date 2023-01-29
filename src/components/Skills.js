@@ -1,4 +1,4 @@
-import { SkillsList, SkillsListItem } from "./ComponentStyle"
+import { SkillsList, SkillsListItem  } from "../styles/AboutStyle";
 import { skills } from "../data/data";
 import React from "react";
 
