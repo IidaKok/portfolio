@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import me from "../images/Me2.jpeg";
+import me from "../images/Me1.png";
 import { StyledPage, Heading, Button } from "../styles/Common";
 import { Picture, Wrapper, StyledHome, Aside, StyledWriter } from "../styles/HomeStyles";
 
