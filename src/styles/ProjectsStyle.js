@@ -28,6 +28,7 @@ color: white;
 justify-content: center;
 margin-right: 0;
 margin-left: 0;
+margin-top: 50px;
 
 display: flex;
 flex-flow: row wrap;
@@ -35,6 +36,7 @@ text-align: center;
 >* {
     padding: 10px;
     flex: 1 100%;
-}`;
+}
+`;
 
 export {ProjectPage, StyledCard, StyledRow}

@@ -26,15 +26,7 @@ margin-right: auto;
 width: 50%;
 border-radius: 50%;`;
 
-const Wrapper = styled.div`
-display: flex;
-flex-flow: row wrap;
-text-align: center;
-row-gap: 30px;
->* {
-    padding: 10px;
-    flex: 1 100%;
-}`;
+
 
 const Aside = styled.div`
 top: 50px;
@@ -45,4 +37,4 @@ text-align: center;
     width: 400px;
 }`;
 
-export {SkillsList, SkillsListItem, Picture, Wrapper, Aside}
+export {SkillsList, SkillsListItem, Picture, Aside}

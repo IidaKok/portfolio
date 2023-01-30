@@ -50,8 +50,22 @@ justify-content: center;
 width: 85%;
 margin: 20px;
 padding-top: 170px;
+
+@media screen and (min-width: 600px) {
+    padding-top: 100px;
+}
 `;
+const Context = styled.div`
+display: flex;
+flex-flow: row wrap;
+text-align: center;
+row-gap: 30px;
+padding-top: 30px;
+width: 60%;
+>* {
+    padding: 10px;
+    flex: 1 100%;
+}`;
 
 
-
-export {StyledPage, Heading, Button, StyledDiv}
+export {StyledPage, Heading, Button, StyledDiv, Context}
