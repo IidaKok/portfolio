@@ -10,14 +10,15 @@ const Menu = ({ handleNavToggle }) => {
     return (
         <>
             <StyledMenu>
-                <StyledLink className="animate__animated animate__fadeInLeft" to="/portfolio" onClick={handleNavToggle}>Home</StyledLink>
-                <StyledLink className="animate__animated animate__fadeInLeft" to="/portfolio/about" onClick={handleNavToggle}>About</StyledLink>
-                <StyledLink className="animate__animated animate__fadeInLeft" to="/portfolio/projects" onClick={handleNavToggle}>Projects</StyledLink>
-                <StyledLink className="animate__animated animate__fadeInLeft" to="/portfolio/contact" onClick={handleNavToggle}>Contact</StyledLink>
+                <StyledLink className="animate__animated animate__fadeInLeft" to="/" onClick={handleNavToggle}>Home</StyledLink>
+                <StyledLink className="animate__animated animate__fadeInLeft" to="/about" onClick={handleNavToggle}>About</StyledLink>
+                <StyledLink className="animate__animated animate__fadeInLeft" to="/projects" onClick={handleNavToggle}>Projects</StyledLink>
+                <StyledLink className="animate__animated animate__fadeInLeft" to="/contact" onClick={handleNavToggle}>Contact</StyledLink>
                 <CloseToggle onClick={handleNavToggle} />
             </StyledMenu>
         </>
     )
+
 }
 const BigMenu = () => {
     <BigscreenMenu>

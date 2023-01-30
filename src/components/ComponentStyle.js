@@ -83,7 +83,7 @@ justify-content: center;
 
 
 @media screen and (max-width: 1040px) {
-   visibility: hidden;
+   visibility: visible;
 }`;
 
 export {CloseToggle, StyledLink, StyledMenu, StyledToggle, BigscreenMenu, List, Item }

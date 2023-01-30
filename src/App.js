@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import './App.css';
 
@@ -37,10 +37,10 @@ function App() {
         {navToggled ? <Menu handleNavToggle={handleNavToggle} /> : null}
 
         <Routes>
-          <Route exact path="/portfolio" element={<Home />} />
-          <Route path="/portfolio/about" element={<About />} />
-          <Route path="/portfolio/projects" element={<Projects />} />
-          <Route path="/portfolio/contact" element={<Contact />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
       <Footer />
