@@ -2,67 +2,7 @@
 .App {
   text-align: center;
   position: relative;
-
 }
-
-/*Desktop View*/
-.header {
-  position: fixed;
-  left: 0;
-  height: 100%;
-  width: 8%;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.nav-options {
-  padding-left: 25px;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 50px;
-  list-style-type: none;
-
-}
-
-@media (max-width: 648px) {
-
-  /*Mobile View */
-  .header {
-    padding: 0px 10px;
-  }
-
-  .nav-options {
-    display: flex;
-    width: 10%;
-    height: 350px;
-    position: absolute;
-    top: 80px;
-    left: -10%;
-    opacity: 0;
-    transition: all 0.5s ease;
-    flex-direction: column;
-    list-style-type: none;
-    grid-gap: 0px;
-  }
-
-  .nav-options.active {
-    background: green;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-    align-content: center;
-    padding-left: 0px;
-  }
-
-  .option {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vw;
-    padding: 30px 0px;
-  }
-
+* {
+  box-sizing: border-box;
 }

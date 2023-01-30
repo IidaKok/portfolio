@@ -1,11 +1,6 @@
 import {FaReact, FaNode, FaLinux, FaGit, FaGithub, FaJava, FaHtml5, FaCss3, } from 'react-icons/fa';
 import {SiDotnet, SiVisualstudio, SiJavascript, SiMysql} from 'react-icons/si';
 
-//menuText
-import { FaHome, FaComment, FaList } from "react-icons/fa";
-import { SiAboutdotme } from "react-icons/si";
-
-
 const about = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non tempus neque." + 
         "Pellentesque quis vulputate est. Duis non aliquet enim. Morbi vel molestie risus, euismod blandit nibh. Vivamus molestie sem arcu, " + 
@@ -82,23 +77,4 @@ const projects = [
         view: "Ehkä linkit tiedostoihin jotka olen kirjoittanut?"
     }
 ]
-const menuData = [
-    {
-        text: "Home",
-        icon: <FaHome />
-    },
-    {
-        text: "About",
-        icon: <SiAboutdotme />
-    },
-    {
-        text: "Projects",
-        icon: <FaList />
-    },
-    {
-        text: "Contact",
-        icon: <FaComment />
-    }
-]
-
-export {skills, about, projects, menuData}
+export {skills, about, projects}

@@ -7,7 +7,8 @@ margin-left: auto;
 margin-right: auto;
 width: 60%;
 height: 100%;
-border-radius: 50%;`;
+border-radius: 50%;
+`;
 
 const BtnBackground = styled.div`
 position: absolute;

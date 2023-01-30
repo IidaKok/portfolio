@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledPage = styled.div`
 min-height: 100vh;
-width: 100vw;
+width: 100%;
 background-color: #0b0c10;
 display: flex;
 flex-direction: column;
@@ -42,14 +42,16 @@ margin: 5px;
 
 const StyledDiv = styled.div`
 position: relative;
-padding: 0px 10px;
+width: fit-content;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 width: 85%;
 margin: 20px;
+padding-top: 170px;
 `;
+
 
 
 export {StyledPage, Heading, Button, StyledDiv}
