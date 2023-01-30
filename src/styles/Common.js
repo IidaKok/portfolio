@@ -34,10 +34,13 @@ text-decoration: none;
 font-size: 16px;
 cursor: pointer;
 border-radius: 4px;
-margin: 5px;
+margin-top: 30px;
 
 &:hover {
     background-color: #e7e7e7;
+}
+@media screen and (min-width: 600px) {
+    margin-top: 100px;
 }`;
 
 const StyledDiv = styled.div`

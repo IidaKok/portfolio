@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Writer from "../components/Writer";
 
 const Picture = styled.img`
 display: block;
@@ -8,6 +7,11 @@ margin-right: auto;
 width: 60%;
 height: 100%;
 border-radius: 50%;
+
+@media screen and (max-width: 600px) {
+    width: 40%;
+    height: 80%;
+}
 `;
 
 const BtnBackground = styled.div`
@@ -28,12 +32,15 @@ row-gap: 100px;
 const StyledHome = styled.div`
 width: 80%;
 height: fit-content;
+padding-top: 170px;
+
 @media screen and (min-width: 600px) {
-    width: 70%;
+    padding-top: 100px;
+    width: 65%;
 }`;
 
 const Aside = styled.div`
-height: 200px;
+height: 300px;
 text-align: left;
 
 @media screen and (min-width: 600px) {
@@ -41,9 +48,5 @@ text-align: left;
     height: 350px;
 }`;
 
-const StyledWriter = styled(Writer)`
-color: red;
-font-size: 400px;
-`;
 
-export {Picture, BtnBackground, Wrapper, StyledHome, Aside, StyledWriter}
+export {Picture, BtnBackground, Wrapper, StyledHome, Aside}

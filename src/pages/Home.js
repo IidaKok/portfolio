@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import me from "../images/Me1.png";
+import me from "../images/Me2.jpeg";
 import { StyledPage, Heading, Button } from "../styles/Common";
 import { Picture, Wrapper, StyledHome, Aside, StyledWriter } from "../styles/HomeStyles";
+import Writer from "../components/Writer";
 
 
 //Home page
@@ -17,7 +18,8 @@ const Home = () => {
             <Heading>
               Iida Kokkonen
             </Heading>
-            <StyledWriter/>
+            
+            <h2><Writer/></h2>
             <Link to="/contact">
               <Button>Contact me!</Button>
             </Link>  
