@@ -33,7 +33,10 @@ transition: .2s all ease-in-out;
 &:hover {
     transition: .2s all ease-in-out;
     color: #00ffff;
-}`;
+}
+@media screen and (min-width: 790px) {
+    
+  }`;
 
 const CloseToggle = styled(FaTimes)`
 position: fixed;
@@ -42,7 +45,10 @@ left: 4%;
 color: #fff;
 place-items: center;
 font-size: 30px;
-cursor: pointer;`;
+cursor: pointer;
+@media screen and (min-width: 790px) {
+    
+  }`;
 
 //Toggle
 const StyledToggle = styled(FaBars)`
@@ -54,36 +60,11 @@ place-items: center;
 font-size: 30px;
 cursor: pointer;
 
-@media screen and (min-width: 1050px) {
-    visibility: visible;
-}
+@media screen and (min-width: 790px) {
+    
+  }
+
 `;
 
 
-
-///////
-const List = styled.ul`
-list-style-type: none;`;
-
-const Item = styled.li`
-font-size: 30px;
-color: white;
-cursor: pointer;
-left: 0;`;
-
-const BigscreenMenu = styled.div`
-position: fixed;
-left: 0;
-height: 100%;
-width: 8%;
-z-index: 1;
-display: flex;
-flex-direction: column;
-justify-content: center;
-
-
-@media screen and (max-width: 1040px) {
-   visibility: visible;
-}`;
-
-export {CloseToggle, StyledLink, StyledMenu, StyledToggle, BigscreenMenu, List, Item }
+export {CloseToggle, StyledLink, StyledMenu, StyledToggle}
