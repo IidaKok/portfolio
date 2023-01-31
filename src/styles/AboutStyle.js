@@ -26,7 +26,9 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 width: 50%;
-max-height: 400px;`;
+max-height: 400px;
+border-style: outset;
+border: 4px solid #191a1a;`;
 
 const Aside = styled.aside`
 min-height: 50px;
@@ -35,18 +37,17 @@ flex-wrap: wrap;
 justify-content: center;
 text-align: center;
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     flex: 1 0 0;
     min-height: 500px;
     row-gap: 0;
     margin: 0;
     margin-bottom: 50px;
     margin-top: 50px;
-    
 }
 `;
 const TextRight = styled.div`
-padding: 0;
+padding: 15px;
 text-align: left;
 
 @media screen and (min-width: 1050px) {
@@ -54,7 +55,7 @@ text-align: left;
     padding-right: 10%;
 }`;
 const TextLeft = styled.div`
-padding: 0;
+padding: 15px;
 text-align: left;
 
 @media screen and (min-width: 1050px) {

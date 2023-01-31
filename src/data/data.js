@@ -60,7 +60,7 @@ const skills = [
 const projects = [
     {
         name: "Portfolio",
-        description: "This is the website",
+        description: "This is the website. This is the website. This is the website.",
         github: "https://github.com/IidaKok/portfolio",
         view: "https://iidakok.github.io/portfolio/"
     },

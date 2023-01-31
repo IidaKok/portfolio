@@ -6,10 +6,8 @@ margin-left: auto;
 margin-right: auto;
 min-width: 60%;
 height: 100%;
-
-@media screen and (max-width: 700px) {
-    
-}
+border-style: outset;
+border: 4px solid #191a1a;
 `;
 
 

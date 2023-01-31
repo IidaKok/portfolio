@@ -7,7 +7,7 @@ const Project = ({ project }) => {
     return (
         <>
         <StyledCard>
-        <StyledCard.Title>{project.name}</StyledCard.Title>
+        <StyledCard.Title><h2>{project.name}</h2></StyledCard.Title>
                 <StyledCard.Body>
                     
                     <StyledCard.Text>{project.description}</StyledCard.Text>
@@ -15,10 +15,10 @@ const Project = ({ project }) => {
                 </StyledCard.Body>
                 <StyledCard.Footer>
                         {project.github && (
-                            <a href={project.github}><Button style={{color: "black", border: "2px solid black"}}>Github</Button></a>
+                            <a href={project.github}><Button>Github</Button></a>
                         )}
                         {project.view && (
-                            <a href={project.view}><Button style={{color: "black", border: "2px solid black"}}>View</Button></a>
+                            <a href={project.view}><Button>View</Button></a>
                         )}
                     </StyledCard.Footer>
             </StyledCard>

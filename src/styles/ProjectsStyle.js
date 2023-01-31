@@ -11,14 +11,11 @@ height: fit-content;
 }`;
 
 const StyledCard = styled(Card)`
-border: 0.1px solid #191a1a;
+border: 4px solid #191a1a;
 min-width: 15rem;
 max-width: 20rem;
-background-color: #7AB590;
 min-height: 150px;
 margin: 10px;
-color: #000000;
-
 &:hover {
     transform: translateY(-7px);
 }`;
