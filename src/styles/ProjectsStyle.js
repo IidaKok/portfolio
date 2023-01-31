@@ -21,7 +21,7 @@ margin: 10px;
 }`;
 
 const StyledRow = styled(Row)`
-color: white;
+color: #F8F8FF;
 justify-content: center;
 margin-right: 0;
 margin-left: 0;

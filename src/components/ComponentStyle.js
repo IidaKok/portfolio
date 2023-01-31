@@ -18,7 +18,7 @@ margin-left: 10px;
 `;
 
 const StyledLink = styled(Link)`
-color: #c5c6c7;
+color: #F8F8FF;
 text-decoration: none;
 font-size: clamp(1.5rem, 2vw, 3vw);
 font-family: impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -44,7 +44,7 @@ const StyledToggle = styled(FaBars)`
 position: fixed;
 top: 5%;
 left: 4%;
-color: #fff;
+color: #F8F8FF;
 place-items: center;
 font-size: 30px;
 cursor: pointer;

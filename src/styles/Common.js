@@ -7,7 +7,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-color: #D2FADF;`;
+color: #F8F8FF;`;
 
 const Heading = styled.h1`
 font-size: clamp(3rem, 4vw, 6vw);
@@ -25,8 +25,8 @@ user-select: none;
 
 const Button = styled.button`
 background-color: transparent;
-color: #D2FADF;
-border: 2px solid #e7e7e7;
+color: #F8F8FF;
+border: 2px solid #F8F8FF;
 transition-duration: 0.4s;
 padding: 6px 22px;
 text-decoration: none;
