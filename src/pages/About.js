@@ -2,7 +2,7 @@ import React from "react";
 import Skills from "../components/Skills";
 import { about } from "../data/data";
 import { StyledPage, Heading, StyledDiv, Context } from "../styles/Common";
-import me from "../images/Me.jpg";
+import me from "../images/aboutpage_picture.jpeg";
 import { Picture, Aside, TextLeft, TextRight } from "../styles/AboutStyle";
 
 const About = () => {
@@ -17,6 +17,7 @@ const About = () => {
                     </Aside>
                     <Aside>
                         <TextRight>
+                            {about}
                             {about}
                         </TextRight>
                     </Aside>

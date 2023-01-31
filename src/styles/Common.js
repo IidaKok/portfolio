@@ -3,12 +3,11 @@ import styled from 'styled-components';
 const StyledPage = styled.div`
 min-height: 100vh;
 width: 100%;
-background-color: #0b0c10;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-color: #c5c6c7;`;
+color: #D2FADF;`;
 
 const Heading = styled.h1`
 font-size: clamp(3rem, 4vw, 6vw);
@@ -16,7 +15,7 @@ font-weight: 500;
 margin: 0;
 padding: 0;
 display: flex;
-color: #00ffff;
+color: #00ff99;
 user-select: none;
 -webkit-user-select: none;
 -khtml-user-select: none;
@@ -25,8 +24,8 @@ user-select: none;
 
 
 const Button = styled.button`
-background-color: #282c34;
-color: black;
+background-color: transparent;
+color: #D2FADF;
 border: 2px solid #e7e7e7;
 transition-duration: 0.4s;
 padding: 6px 22px;
@@ -35,9 +34,10 @@ font-size: 16px;
 cursor: pointer;
 border-radius: 4px;
 margin-top: 25px;
+margin: 10px;
 
 &:hover {
-    background-color: #e7e7e7;
+    background-color: #ff5050;
 }
 @media screen and (max-width: 380px) {
     margin-top: 10px;

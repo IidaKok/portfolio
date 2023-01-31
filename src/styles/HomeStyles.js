@@ -4,9 +4,8 @@ const Picture = styled.img`
 display: block;
 margin-left: auto;
 margin-right: auto;
-width: 60%;
+min-width: 60%;
 height: 100%;
-border-radius: 50%;
 
 @media screen and (max-width: 700px) {
     

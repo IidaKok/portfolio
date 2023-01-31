@@ -29,6 +29,11 @@ font-weight: 600;
 color: var(--clr-fg);
 cursor: pointer;
 
+&:hover {
+    transition: .2s all ease-in-out;
+    color: #ff5050;
+}
+
 @media screen and (min-width: 1050px) {
     font-size: 38px;
 }`;

@@ -1,16 +1,40 @@
 .App {
   text-align: center;
   position: relative;
+
+  width: 100wh;
+  height: 100%;
+  color: #fff;
+  background: linear-gradient(-45deg, #00001a, #000000, #000000, #001a1a);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
 }
 
 * {
   box-sizing: border-box;
 }
 
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
 
-h2 {
-  margin: 0;
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
+
+
+
+
+
+
 
 .fade-enter {
   opacity: 0;
@@ -37,7 +61,7 @@ h2 {
   position: fixed;
   height: 100vh;
   max-width: 25px;
-  background-color: #282c34;
+  background-color: #005162;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -55,7 +79,7 @@ ul {
 }
 
 @media screen and (max-width: 790px) {
- 
+
   .sidebar {
     max-width: 250px;
   }

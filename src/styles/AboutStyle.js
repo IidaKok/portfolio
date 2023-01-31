@@ -26,8 +26,7 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 width: 50%;
-max-height: 400px;
-border-radius: 50%;`;
+max-height: 400px;`;
 
 const Aside = styled.aside`
 min-height: 50px;

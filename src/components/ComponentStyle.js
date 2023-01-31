@@ -30,7 +30,7 @@ margin-top: 70px;
 
 &:hover {
     transition: .2s all ease-in-out;
-    color: #00ffff;
+    color: #ff5050;
 }
 @media screen and (min-width: 750px) {
   row-gap: 30px;
