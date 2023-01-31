@@ -56,7 +56,6 @@ justify-content: center;
 width: 85%;
 margin: 20px;
 padding-top: 35px;
-background-color: black;
 
 @media screen and (min-width: 600px) {
     padding-top: 100px;
@@ -68,12 +67,13 @@ flex-flow: row wrap;
 text-align: center;
 row-gap: 30px;
 padding-top: 30px;
-width: 60%;
+width: 100%;
 
 >* {
     padding: 10px;
     flex: 1 100%;
-}`;
+}
+`;
 
 
 export {StyledPage, Heading, Button, StyledDiv, Context}
