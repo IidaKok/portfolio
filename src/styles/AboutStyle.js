@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const SkillsList = styled.ul`
 max-width: 450px;
-max-height: 350px;
 width: 100%;
 display: flex;
 flex-wrap: wrap;
@@ -34,7 +33,6 @@ text-align: center;
 
 @media screen and (min-width: 600px) {
     flex: 1 0 0;
-    width: 400px;
 }`;
 
 export {SkillsList, SkillsListItem, Picture, Aside}

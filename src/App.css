@@ -1,8 +1,60 @@
-
 .App {
   text-align: center;
   position: relative;
 }
+
 * {
   box-sizing: border-box;
+}
+
+
+
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+
+.sidebar {
+  padding: 20px;
+  transition: 0.4s ease-in;
+  position: fixed;
+  height: 100vh;
+  max-width: 25px;
+  background-color: #282c34;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-closed {
+  min-width: 30px;
+  background: transparent;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline;
+}
+
+@media screen and (max-width: 790px) {
+ 
+  .sidebar {
+    max-width: 250px;
+  }
 }

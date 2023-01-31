@@ -8,22 +8,17 @@ width: 60%;
 height: 100%;
 border-radius: 50%;
 
-@media screen and (max-width: 600px) {
-    width: 40%;
-    height: 80%;
+@media screen and (max-width: 700px) {
+    
 }
 `;
 
-const BtnBackground = styled.div`
-position: absolute;
-bottom: 0;
-right: 0;`;
 
 const Wrapper = styled.div`
 display: flex;
 flex-flow: row wrap;
 text-align: center;
-row-gap: 100px;
+row-gap: 55px;
 >* {
     padding: 10px;
     flex: 1 100%;
@@ -32,10 +27,10 @@ row-gap: 100px;
 const StyledHome = styled.div`
 width: 80%;
 height: fit-content;
-padding-top: 170px;
+padding-top: 10px;
 
-@media screen and (min-width: 600px) {
-    padding-top: 100px;
+@media screen and (min-width: 700px) {
+    padding-top: 0;
     width: 65%;
 }`;
 
@@ -49,4 +44,4 @@ text-align: left;
 }`;
 
 
-export {Picture, BtnBackground, Wrapper, StyledHome, Aside}
+export {Picture, Wrapper, StyledHome, Aside}

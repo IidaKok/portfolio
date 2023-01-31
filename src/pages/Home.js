@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import me from "../images/Me2.jpeg";
 import { StyledPage, Heading, Button } from "../styles/Common";
-import { Picture, Wrapper, StyledHome, Aside, StyledWriter } from "../styles/HomeStyles";
+import { Picture, Wrapper, StyledHome, Aside } from "../styles/HomeStyles";
 import Writer from "../components/Writer";
 
 
@@ -22,7 +22,7 @@ const Home = () => {
             <h2><Writer/></h2>
             <Link to="/contact">
               <Button>Contact me!</Button>
-            </Link>  
+            </Link> 
           </Aside>
           <Aside>
             <Picture src={me} />

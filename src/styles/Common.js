@@ -34,13 +34,16 @@ text-decoration: none;
 font-size: 16px;
 cursor: pointer;
 border-radius: 4px;
-margin-top: 30px;
+margin-top: 25px;
 
 &:hover {
     background-color: #e7e7e7;
 }
-@media screen and (min-width: 600px) {
-    margin-top: 100px;
+@media screen and (max-width: 380px) {
+    margin-top: 10px;
+}
+@media screen and (min-width: 700px) {
+    margin-top: 70px;
 }`;
 
 const StyledDiv = styled.div`
@@ -52,7 +55,8 @@ align-items: center;
 justify-content: center;
 width: 85%;
 margin: 20px;
-padding-top: 170px;
+padding-top: 35px;
+background-color: black;
 
 @media screen and (min-width: 600px) {
     padding-top: 100px;
@@ -65,6 +69,7 @@ text-align: center;
 row-gap: 30px;
 padding-top: 30px;
 width: 60%;
+
 >* {
     padding: 10px;
     flex: 1 100%;

@@ -77,4 +77,10 @@ const projects = [
         view: "Ehkä linkit tiedostoihin jotka olen kirjoittanut?"
     }
 ]
-export {skills, about, projects}
+const menuItems = [
+    { text: "Home", to: "/" },
+    { text: "About", to: "/about" },
+    { text: "Projects", to: "/projects" },
+    { text: "Contact", to: "/contact" },
+];
+export {skills, about, projects, menuItems}
