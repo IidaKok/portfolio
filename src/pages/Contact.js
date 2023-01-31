@@ -8,7 +8,7 @@ const Contact = () => {
 
     return (
         <StyledPage>
-            <StyledDiv>
+            <StyledDiv className="animate__animated animate__fadeIn animate__slow">
                 <Heading>Contact me!</Heading>
                 <Context>
                     <List>

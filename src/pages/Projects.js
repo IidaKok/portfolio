@@ -11,7 +11,7 @@ const Projects = () => {
     }
     return (
         <StyledPage>
-                <StyledDiv>
+                <StyledDiv className="animate__animated animate__fadeIn animate__slow">
                     <Heading>My projects</Heading>
                     <StyledRow>
                         {projects.map((project) => (

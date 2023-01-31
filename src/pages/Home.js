@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <StyledPage>
       <StyledHome>
-        <Wrapper>
+        <Wrapper className="animate__animated animate__fadeIn animate__slow">
           <Aside>
             <h1>Hello, I am</h1>
             <Heading>

@@ -8,7 +8,7 @@ import { Picture, Aside } from "../styles/AboutStyle";
 const About = () => {
     return (
         <StyledPage>
-            <StyledDiv>
+            <StyledDiv className="animate__animated animate__fadeIn animate__slow">
             <Heading>Who am I?</Heading>
             
                 <Context>

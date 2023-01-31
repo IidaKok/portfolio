@@ -29,7 +29,7 @@ const Menu = () => {
             <div className={cx("sidebar", { "sidebar-closed": !open })}>
                 <StyledToggle onClick={() => setOpen(!open)} />
                 <ul>
-                    {menuItems.map((link) => (<StyledLink to={link.to}>
+                    {menuItems.map((link) => (<StyledLink to={link.to} onClick={() => setOpen(!open)}>
                         <CSSTransition
                             in={open}
                             timeout={200}
