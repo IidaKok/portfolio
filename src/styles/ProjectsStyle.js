@@ -35,5 +35,13 @@ text-align: center;
     flex: 1 100%;
 }
 `;
+const List = styled.ul`
+display: flex;
+padding-top: 25px;
+margin: 0; 
+justify-content: center;`;
 
-export {ProjectPage, StyledCard, StyledRow}
+const Item = styled.li`
+margin: 10px`;
+
+export {ProjectPage, StyledCard, StyledRow, List, Item}

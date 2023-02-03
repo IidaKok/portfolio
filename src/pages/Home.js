@@ -6,6 +6,7 @@ import { Picture, Wrapper, StyledHome, Aside } from "../styles/HomeStyles";
 import Writer from "../components/Writer";
 
 
+
 //Home page
 const Home = () => {
 
@@ -18,17 +19,27 @@ const Home = () => {
             <Heading>
               Iida Kokkonen
             </Heading>
-            
-            <h2><Writer/></h2>
+
+            <h2><Writer /></h2>
             <Link to="/contact">
               <Button>Contact me!</Button>
-            </Link> 
+            </Link>
           </Aside>
           <Aside>
             <Picture src={me} />
           </Aside>
         </Wrapper>
       </StyledHome>
+
+
+
+
+      
+
+
+
+
+
     </StyledPage>
   )
 }

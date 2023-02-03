@@ -1,80 +1,99 @@
-import {FaReact, FaNode, FaLinux, FaGit, FaGithub, FaJava, FaHtml5, FaCss3, } from 'react-icons/fa';
-import {SiDotnet, SiVisualstudio, SiJavascript, SiMysql} from 'react-icons/si';
+import {FaReact, FaNode, FaLinux, FaGit, FaGithub, FaJava, FaHtml5, FaCss3, FaBootstrap} from 'react-icons/fa';
+import {SiDotnet, SiVisualstudio, SiJavascript, SiMysql, SiIntellijidea, SiVirtualbox, SiJquery} from 'react-icons/si';
 
 const about = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non tempus neque." + 
-        "Pellentesque quis vulputate est. Duis non aliquet enim. Morbi vel molestie risus, euismod blandit nibh. Vivamus molestie sem arcu, " + 
-        "nec hendrerit quam lobortis eu. Etiam placerat cursus enim in sagittis. Etiam eget turpis non mi mattis fermentum. Nulla facilisi. " + 
-        "Proin odio nisl, luctus non nulla eget, lobortis egestas tortor. Maecenas sem nisi, tempor eu odio a, consequat rutrum urna."
+    "I am 26 years old software engineering student from Kuopio. My passion is creating appealing and interesting applications. I feel that I am at my strongest at the frontend coding, but I also have skills in the backend. I am interested in developing my skills to become a proficient full stack developer.",
+    "On my freetime, I like lifting weights at the gym and knit."
+]
+const aboutSkills = [
+    "I have studied at Savonia University of Applied Sciences for 2,5 years and gained experience in c#, java and javascript languages. Also sql queries, html, css, .net and react have become familiar.",
+      "I graduated as an ict technican in 2019, so I have, for example, experiance on the server side, system support, telecommunications equipment installations and cabling.",
+      "I also have over two years experience in customer service."
 ]
 const skills = [
     {
-        name: 'react',
+        name: 'React.js',
         icon: <FaReact />
     },
     {
-        name: 'node',
+        name: 'Node.js',
         icon: <FaNode />
     },
     {
-        name: 'vs',
+        name: 'Visual Studio',
         icon: <SiVisualstudio />
     },
     {
-        name: 'linux',
+        name: 'Linux',
         icon: <FaLinux />
     },
     {
-        name: 'git',
+        name: 'Git',
         icon: <FaGit />
     },
     {
-        name: 'github',
+        name: 'Github',
         icon: <FaGithub />
     },
     {
-        name: 'java',
+        name: 'Java',
         icon: <FaJava />
     },
     {
-        name: 'javascript',
+        name: 'Javascript',
         icon: <SiJavascript/>
     },
     {
-        name: 'html',
+        name: 'Html',
         icon: <FaHtml5 />
     },
     {
-        name: 'css',
+        name: 'Css',
         icon: <FaCss3 />
     },
     {
-        name: 'net',
+        name: 'Dotnet',
         icon: <SiDotnet />
     },
     {
-        name: 'mySql',
+        name: 'MySql',
         icon: <SiMysql />
+    },
+    {
+        name: 'Intellj',
+        icon: <SiIntellijidea/>
+    },
+    {
+        name: 'Virtualbox',
+        icon: <SiVirtualbox/>
+    },
+    {
+        name: 'Jquery',
+        icon: <SiJquery/>
+    },
+    {
+        name: 'Bootstrap', 
+        icon: <FaBootstrap/>
     }
 ]
 const projects = [
     {
         name: "Portfolio",
-        description: "This is the website. This is the website. This is the website.",
-        github: "https://github.com/IidaKok/portfolio",
-        view: "https://iidakok.github.io/portfolio/"
+        description: "I wanted to create a project that would show my skills and learn more about how to use react.",
+        languages: ["Javascript", "Html", "Css"],
+        github: "https://github.com/IidaKok/portfolio"
     },
     {
         name: "Ninja's website",
         description: "I created this website in Web and mobile interfaces course. It's responsive and designed for kids.",
-        github: "https://github.com/IidaKok/Iidakok.github.io",
-        view: "https://iidakok.github.io/"
+        languages: ["Html", "Css"],
+        github: "https://github.com/IidaKok/Iidakok.github.io"
     },
     {
-        name: "Mökkien hallinta",
-        description: "Ohjelmistotuotannon kurssin projektityö. Minun vastuullani oli varausten hallinta. ",
-        github: "https://github.com/turunena/OhjelmistotuotantoProjekti",
-        view: "Ehkä linkit tiedostoihin jotka olen kirjoittanut?"
+        name: "Management of cabin reservations",
+        description: "Project work for the software production course. My responsibility was booking management. I recommend taking a look at the frmVaraukset.cs and frmPalveluidenRaportointi.cs files",
+        languages: ["C#", "Sql"],
+        github: "https://github.com/turunena/OhjelmistotuotantoProjekti"
     }
 ]
 const menuItems = [
@@ -83,4 +102,4 @@ const menuItems = [
     { text: "Projects", to: "/projects" },
     { text: "Contact", to: "/contact" },
 ];
-export {skills, about, projects, menuItems}
+export {skills, about, aboutSkills, projects, menuItems}
