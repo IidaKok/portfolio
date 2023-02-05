@@ -1,5 +1,6 @@
-import React from "react";
-import { StyledLink, StyledMenu, StyledToggle } from "./ComponentStyle";
+import React, { useState } from "react";
+import cx from "classnames";
+import { CSSTransition } from "react-transition-group";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { menuItems } from "../data/data";
 
@@ -9,10 +10,9 @@ import About from '../pages/About';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
 
-import { useState } from "react";
-
-import { CSSTransition } from "react-transition-group";
-import cx from "classnames";
+//styles
+import { StyledLink, StyledMenu, StyledToggle } from "../styles/MenuStyle";
+import "../styles/MenuTransition.css";
 
 const Menu = () => {
 
@@ -49,7 +49,6 @@ const Routing = () => {
         <div>
             <Router>
                 <Menu />
-
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />

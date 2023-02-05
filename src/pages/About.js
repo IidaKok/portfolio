@@ -3,7 +3,7 @@ import Skills from "../components/Skills";
 import { about, aboutSkills } from "../data/data";
 import { StyledPage, Heading, StyledDiv, Context } from "../styles/Common";
 import me from "../images/aboutpage_picture.jpeg";
-import { Picture, Aside, TextLeft, TextRight } from "../styles/AboutStyle";
+import { Picture, Aside, TextLeft, TextRight, Text } from "../styles/AboutStyle";
 
 const About = () => {
     return (
@@ -17,7 +17,7 @@ const About = () => {
                     </Aside>
                     <Aside>
                         <TextRight>
-                        {about.map((a) => (<p>{a}</p>))} 
+                            {about.map((a) => (<Text>{a}</Text>))}
                         </TextRight>
                     </Aside>
                 </Context>
@@ -26,7 +26,7 @@ const About = () => {
                     <h2>Experiance & Skills</h2>
                     <Aside>
                         <TextLeft>
-                        {aboutSkills.map((a) => (<p>{a}</p>))}
+                            {aboutSkills.map((a) => (<Text>{a}</Text>))}
                         </TextLeft>
                     </Aside>
                     <Aside>

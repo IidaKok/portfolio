@@ -2,13 +2,14 @@ import {FaReact, FaNode, FaLinux, FaGit, FaGithub, FaJava, FaHtml5, FaCss3, FaBo
 import {SiDotnet, SiVisualstudio, SiJavascript, SiMysql, SiIntellijidea, SiVirtualbox, SiJquery} from 'react-icons/si';
 
 const about = [
-    "I am 26 years old software engineering student from Kuopio. My passion is creating appealing and interesting applications. I feel that I am at my strongest at the frontend coding, but I also have skills in the backend. I am interested in developing my skills to become a proficient full stack developer.",
+    "I am 26 years old software engineering student from Kuopio. I am interested in creating appealing and interesting web applications.",
+    "As a person, I am responsible, conscientious and capable of development. ",
     "On my freetime, I like lifting weights at the gym and knit."
 ]
 const aboutSkills = [
     "I have studied at Savonia University of Applied Sciences for 2,5 years and gained experience in c#, java and javascript languages. Also sql queries, html, css, .net and react have become familiar.",
-      "I graduated as an ict technican in 2019, so I have, for example, experiance on the server side, system support, telecommunications equipment installations and cabling.",
-      "I also have over two years experience in customer service."
+      "I have graduated before as an Ict Technican in 2019. From my eralier degree I have experience, for example, experiance on the server side, system support, telecommunications equipment installations and cabling.",
+      "I also have over two years of experience in customer service."
 ]
 const skills = [
     {
@@ -80,7 +81,7 @@ const projects = [
     {
         name: "Portfolio",
         description: "I wanted to create a project that would show my skills and learn more about how to use react.",
-        languages: ["Javascript", "Html", "Css"],
+        languages: ["Javascript", "Html", "Css", "React"],
         github: "https://github.com/IidaKok/portfolio"
     },
     {
@@ -91,7 +92,7 @@ const projects = [
     },
     {
         name: "Management of cabin reservations",
-        description: "Project work for the software production course. My responsibility was booking management. I recommend taking a look at the frmVaraukset.cs and frmPalveluidenRaportointi.cs files",
+        description: "Project work for the Software Engineering course. My responsibility was booking management. I recommend taking a look at the frmVaraukset.cs and frmPalveluidenRaportointi.cs files",
         languages: ["C#", "Sql"],
         github: "https://github.com/turunena/OhjelmistotuotantoProjekti"
     }
@@ -102,4 +103,15 @@ const menuItems = [
     { text: "Projects", to: "/projects" },
     { text: "Contact", to: "/contact" },
 ];
-export {skills, about, aboutSkills, projects, menuItems}
+const contactInfo = [{
+    text: "Send an ",
+    name: "Email",
+    link: "mailto:iida.kokkonen@edu.savonia.fi"
+},
+{
+    text: "Connect in ",
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/iida-kokkonen-10b43423b/"
+}
+]
+export {skills, about, aboutSkills, projects, menuItems, contactInfo}

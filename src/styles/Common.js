@@ -28,22 +28,23 @@ background-color: transparent;
 color: #F8F8FF;
 border: 2px solid #F8F8FF;
 transition-duration: 0.4s;
-padding: 6px 22px;
+padding: 6px 12px;
 text-decoration: none;
 font-size: 16px;
 cursor: pointer;
 border-radius: 4px;
 margin-top: 25px;
 margin: 10px;
+max-width: 500px;
 
 &:hover {
-    background-color: #ff5050;
+    background-color: #001a1a;
 }
 @media screen and (max-width: 380px) {
     margin-top: 10px;
 }
 @media screen and (min-width: 700px) {
-    margin-top: 70px;
+    padding: 6px 22px;
 }`;
 
 const StyledDiv = styled.div`
@@ -74,6 +75,8 @@ width: 100%;
     flex: 1 100%;
 }
 `;
+
+
 
 
 export {StyledPage, Heading, Button, StyledDiv, Context}

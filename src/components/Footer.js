@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <StyledFooter>
             <List>
-                <li><Item onClick={() => window.location.href = "https://www.linkedin.com/in/iida-kokkonen-10b43423b/"}><FaLinkedin /></Item></li>
+                <li><Item onClick={() => window.location.href = "https://www.linkedin.com/in/iida-kokkonen/"}><FaLinkedin /></Item></li>
                 <li><Item onClick={() => window.location.href = "https://github.com/IidaKok"}><FaGithub /></Item></li>
             </List>
         </StyledFooter>
@@ -31,7 +31,7 @@ cursor: pointer;
 
 &:hover {
     transition: .2s all ease-in-out;
-    color: #ff5050;
+    color: #00c598;
 }
 
 @media screen and (min-width: 1050px) {

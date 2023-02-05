@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 
 const Item = styled.a`
-color: var(--clr-fg);
+color: #F8F8FF;
 cursor: pointer;
-text-decoration: none;
 margin: 10px;
 
 &:hover {

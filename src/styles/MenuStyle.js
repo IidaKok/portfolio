@@ -14,23 +14,26 @@ margin-left: 10px;
 
 @media screen and (max-width: 750px) {
   visibility: hidden;
-  }
-`;
+  }`;
 
 const StyledLink = styled(Link)`
 color: #F8F8FF;
 text-decoration: none;
 font-size: clamp(1.5rem, 2vw, 3vw);
-font-family: impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 transition: .2s all ease-in-out;
 display: flex;
 cursor: pointer;
 margin-top: 70px;
+user-select: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
 
 
 &:hover {
     transition: .2s all ease-in-out;
-    color: #ff5050;
+    color: #00c598;
 }
 @media screen and (min-width: 750px) {
   row-gap: 30px;
@@ -55,4 +58,5 @@ cursor: pointer;
 `;
 
 
-export { StyledLink, StyledMenu, StyledToggle}
+
+export { StyledLink, StyledMenu, StyledToggle }

@@ -40,5 +40,15 @@ text-align: left;
     height: 350px;
 }`;
 
+const DownloadItem = styled.a`
+color: #F8F8FF;
+text-decoration: none;
+`;
+const BtnBackground = styled.div`
+position: absolute;
 
-export {Picture, Wrapper, StyledHome, Aside}
+@media screen and (min-width: 700px) {
+    margin-top: 50px;
+}`;
+
+export {Picture, Wrapper, StyledHome, Aside, DownloadItem, BtnBackground}
