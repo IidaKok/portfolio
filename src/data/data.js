@@ -5,13 +5,13 @@ import ninja from "../images/ninjas_picture.png";
 import project from "../images/project.PNG";
 
 const about = [
-    "My name is Iida Kokkonen and I am 26 years old software engineering student from Kuopio. I enjoy creating user-friendly websites and applications.",
+    "I am 26 years old software engineering student from Kuopio. I enjoy creating user-friendly websites and applications.",
     "As a person, I am responsible and conscientious. I am excited to develop my skills and learn new things.",
-    "When I have some free time, I enjoy lying on a couch, knitting and watching Netflix."
+    "When I have some free time, I enjoy lying on a couch, knitting and watching movies."
 ]
 const aboutSkills = [
     "I have studied at Savonia University of Applied Sciences for 2,5 years and gained experience in c#, java and javascript languages. Also sql queries, html, css, .net and react have become familiar.",
-      "I have graduated before as an Ict Technican in 2019. From my earlier degree I have experience, for example, experiance on the server side, system support, telecommunications equipment installations and cabling.",
+      "I have graduated before as an Ict Technican in 2019. From my earlier degree I have experience, for example, on the server side, system support, telecommunications equipment installations and cabling.",
       "I also have over two years of experience in customer service."
 ]
 const skills = [
