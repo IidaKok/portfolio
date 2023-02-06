@@ -1,6 +1,6 @@
 import React from "react";
-import { StyledPage, Heading, StyledDiv, Context } from "../styles/Common";
-import { Item, List } from "../styles/ContactStyle";
+import { StyledPage, Heading, StyledDiv, Context, Paragraph } from "../styles/Common";
+import { ItemLink, List, Item } from "../styles/ContactStyle";
 import { contactInfo } from "../data/data";
 
 const Contact = () => {
@@ -8,15 +8,20 @@ const Contact = () => {
     return (
         <StyledPage>
             <StyledDiv className="animate__animated animate__fadeIn animate__slow">
-                <Heading>Contact me!</Heading>
+                <Heading>Get in touch with me</Heading>
                 <Context>
-                    <p>I am currently looking for an internship position.
-                        If you can offer me the opportunity to develop in your company, please contact me</p>
+                    <Paragraph>I am currently looking for an internship position. <br/>
+                        If you can offer me the opportunity to develop in your company, please contact me</Paragraph>
                     <List>
                         {contactInfo.map((info) => (
-                                <li>
-                                    <p style={{ display: "inline-block" }}>{info.text}</p><Item href={info.link} target="_blank">{info.name}</Item>
-                                </li>
+                            <Item>
+                                <ItemLink href={info.link} target="_blank">
+                                    <Item>
+                                    <p style={{fontSize: "50px", margin: "0"}}>{info.icon}</p>
+                                    <p>{info.text}</p>
+                                    </Item>
+                                </ItemLink>
+                            </Item>
                         ))}
                     </List>
                 </Context>
@@ -24,6 +29,4 @@ const Contact = () => {
         </StyledPage>
     );
 }
-/*<Item onClick={() => window.location.href = "https://www.linkedin.com/in/iida-kokkonen-10b43423b/"}><FaLinkedin size="48" /></Item>
-                        <Item href="mailto:iida.kokkonen@edu.savonia.fi"><MdEmail size="48" /></Item>*/
 export default Contact

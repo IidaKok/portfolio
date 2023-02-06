@@ -12,13 +12,16 @@ height: fit-content;
 
 const StyledCard = styled(Card)`
 border: 4px solid #191a1a;
-min-width: 15rem;
 max-width: 20rem;
-min-height: 150px;
 margin: 10px;
 &:hover {
     transform: translateY(-7px);
 }`;
+
+
+const Image = styled.img`
+width: 100%;
+height: 150px;`;
 
 const StyledRow = styled(Row)`
 color: #F8F8FF;
@@ -37,11 +40,10 @@ text-align: center;
 `;
 const List = styled.ul`
 display: flex;
-padding-top: 25px;
 margin: 0; 
 justify-content: center;`;
 
 const Item = styled.li`
 margin: 10px`;
 
-export {ProjectPage, StyledCard, StyledRow, List, Item}
+export {ProjectPage, StyledCard, StyledRow, List, Item, Image}

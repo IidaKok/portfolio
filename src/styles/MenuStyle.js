@@ -30,11 +30,11 @@ user-select: none;
 -moz-user-select: none;
 -ms-user-select: none;
 
-
 &:hover {
     transition: .2s all ease-in-out;
     color: #00c598;
 }
+
 @media screen and (min-width: 750px) {
   row-gap: 30px;
   transform: rotate(-90deg);

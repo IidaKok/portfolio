@@ -62,8 +62,5 @@ text-align: left;
     padding-top: 10%;
     padding-left: 10%;
 }`;
-const Text = styled.p`
-@media screen and (min-width: 700px) {
-    font-size: 1.3em;
-}`;
-export {SkillsList, SkillsListItem, Picture, Aside, TextRight, TextLeft, Text}
+
+export {SkillsList, SkillsListItem, Picture, Aside, TextRight, TextLeft}

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import me from "../images/homepage_picture.png";
 import { StyledPage, Heading, Button } from "../styles/Common";
-import { Picture, Wrapper, StyledHome, Aside, BtnBackground } from "../styles/HomeStyles";
+import { Picture, Wrapper, StyledHome, Aside, BtnBackground} from "../styles/HomeStyles";
 
 
 //Home page
@@ -23,10 +23,6 @@ const Home = () => {
               <Link to="/contact">
                 <Button>Contact me!</Button>
               </Link>
-              <a href="https://iidakok.github.io/portfolio/IidaKokkonen_cv.pdf"  target="_blank">
-                <Button>Download cv</Button>
-              </a>
-
             </BtnBackground>
 
           </Aside>

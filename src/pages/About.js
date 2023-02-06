@@ -1,9 +1,10 @@
 import React from "react";
 import Skills from "../components/Skills";
 import { about, aboutSkills } from "../data/data";
-import { StyledPage, Heading, StyledDiv, Context } from "../styles/Common";
+import { StyledPage, Heading, StyledDiv, Context, Heading2, Paragraph } from "../styles/Common";
 import me from "../images/aboutpage_picture.jpeg";
-import { Picture, Aside, TextLeft, TextRight, Text } from "../styles/AboutStyle";
+import { Picture, Aside, TextLeft, TextRight } from "../styles/AboutStyle";
+import {MdOpenInNew} from "react-icons/md";
 
 const About = () => {
     return (
@@ -17,16 +18,17 @@ const About = () => {
                     </Aside>
                     <Aside>
                         <TextRight>
-                            {about.map((a) => (<Text>{a}</Text>))}
+                            {about.map((a) => (<Paragraph>{a}</Paragraph>))}
                         </TextRight>
                     </Aside>
                 </Context>
 
                 <Context>
-                    <h2>Experiance & Skills</h2>
+                    <Heading2>Experiance & Skills</Heading2>
                     <Aside>
                         <TextLeft>
-                            {aboutSkills.map((a) => (<Text>{a}</Text>))}
+                            {aboutSkills.map((a) => (<Paragraph>{a}</Paragraph>))}
+
                         </TextLeft>
                     </Aside>
                     <Aside>
@@ -34,6 +36,13 @@ const About = () => {
                     </Aside>
                 </Context>
 
+                <Context>
+                    <Heading2>Resume</Heading2>
+                    
+                    <a href="https://iidakok.github.io/portfolio/IidaKokkonen_cv.pdf" target="_blank"  rel="noreferrer">
+                        <Paragraph>Open resume in new tab <MdOpenInNew/></Paragraph>
+                    </a>
+                </Context>
             </StyledDiv>
         </StyledPage>
 

@@ -23,6 +23,11 @@ h1, h2 {
 -ms-user-select: none;
 }
 
+a {
+  text-decoration: none;
+  color: #F8F8FF;
+}
+
 @keyframes Gradient {
   0% {
     background-position: 0% 50%

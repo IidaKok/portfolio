@@ -1,31 +1,31 @@
-import { StyledCard, List, Item } from "../styles/ProjectsStyle";
+import React from "react";
+import { StyledCard, List, Item, Image } from "../styles/ProjectsStyle";
 import { Button } from "../styles/Common";
 
-import React from "react";
 
 const Project = ({ project }) => {
 
-    
+
     return (
         <>
-        <StyledCard>
-        <StyledCard.Title><h2 style={{ minHeight: "70px"}}>{project.name}</h2></StyledCard.Title>
-                <StyledCard.Body style={{ minHeight: "120px"}}>
-                <StyledCard.Text>{project.description}</StyledCard.Text>   
-                </StyledCard.Body>
+            <StyledCard>
+                <Image variant="top" key={project.name} src={project.image} />
+                <h2 style={{ minHeight: "60px" }}>{project.name}</h2>
 
-                <StyledCard.Footer style={{ padding: "0"}}>
+                <div style={{ minHeight: "100px" }}>
+                    <p style={{ padding: "5px" }}>{project.description}</p>
+                </div>
+
+                <div style={{ margin: "0" }}>
                     <List>
                         {project.languages.map((language) => (
                             <Item> {language} </Item>
                         ))}
                     </List>
-
-
-                        {project.github && (
-                            <a href={project.github}  target="_blank"><Button style={{ margin: "10px"}}>Github</Button></a>
-                        )}
-                    </StyledCard.Footer>
+                    {project.github && (
+                        <a href={project.github} target="_blank" rel="noreferrer"><Button style={{ margin: "10px" }}>Github</Button></a>
+                    )}
+                </div>
             </StyledCard>
         </>
     )

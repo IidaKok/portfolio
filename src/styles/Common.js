@@ -11,7 +11,7 @@ color: #F8F8FF;`;
 
 const Heading = styled.h1`
 font-size: clamp(3rem, 4vw, 6vw);
-font-weight: 500;
+font-weight: 400;
 margin: 0;
 padding: 0;
 display: flex;
@@ -23,6 +23,11 @@ user-select: none;
 -ms-user-select: none;`;
 
 
+const Heading2 = styled.h2`
+text-decoration: underline #00ff99;
+font-size: 2em;`;
+
+
 const Button = styled.button`
 background-color: transparent;
 color: #F8F8FF;
@@ -32,7 +37,7 @@ padding: 6px 12px;
 text-decoration: none;
 font-size: 16px;
 cursor: pointer;
-border-radius: 4px;
+border-radius: 50px;
 margin-top: 25px;
 margin: 10px;
 max-width: 500px;
@@ -75,8 +80,11 @@ width: 100%;
     flex: 1 100%;
 }
 `;
+const Paragraph = styled.p`
+@media screen and (min-width: 700px) {
+    font-size: 1.3em;
+}`;
 
 
 
-
-export {StyledPage, Heading, Button, StyledDiv, Context}
+export {StyledPage, Heading, Button, StyledDiv, Context, Heading2, Paragraph}

@@ -2,7 +2,7 @@ import React from "react";
 import Project from "../components/Project";
 import { projects } from "../data/data";
 import { Heading, StyledPage, StyledDiv } from "../styles/Common";
-import { ProjectPage, StyledRow } from "../styles/ProjectsStyle";
+import { StyledRow } from "../styles/ProjectsStyle";
 
 
 const Projects = () => {
