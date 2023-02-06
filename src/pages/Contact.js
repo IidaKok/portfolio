@@ -15,7 +15,7 @@ const Contact = () => {
                     <List>
                         {contactInfo.map((info) => (
                                 <li>
-                                    <p style={{ display: "inline-block" }}>{info.text}</p><Item href={info.link}>{info.name}</Item>
+                                    <p style={{ display: "inline-block" }}>{info.text}</p><Item href={info.link} target="_blank">{info.name}</Item>
                                 </li>
                         ))}
                     </List>

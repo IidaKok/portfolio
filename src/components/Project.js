@@ -23,7 +23,7 @@ const Project = ({ project }) => {
 
 
                         {project.github && (
-                            <a href={project.github}><Button style={{ margin: "10px"}}>Github</Button></a>
+                            <a href={project.github}  target="_blank"><Button style={{ margin: "10px"}}>Github</Button></a>
                         )}
                     </StyledCard.Footer>
             </StyledCard>
