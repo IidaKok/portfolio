@@ -4,6 +4,8 @@ import me from "../images/homepage_picture.png";
 import { StyledPage, Heading, Button } from "../styles/Common";
 import { Picture, Wrapper, StyledHome, Aside, DownloadItem, BtnBackground } from "../styles/HomeStyles";
 
+import Resume from "../components/Resume";
+
 
 
 //Home page
@@ -24,7 +26,7 @@ const Home = () => {
               <Link to="/contact">
                 <Button>Contact me!</Button>
               </Link>
-              <Button><DownloadItem href="/IidaKokkonen_cv.pdf" download>Download cv</DownloadItem></Button>
+              <Button><DownloadItem href="logo192.png" download>Download cv</DownloadItem></Button>
             </BtnBackground>
 
           </Aside>
@@ -32,6 +34,7 @@ const Home = () => {
             <Picture src={me} />
           </Aside>
         </Wrapper>
+        
       </StyledHome>
 
 
@@ -48,3 +51,4 @@ const Home = () => {
 }
 
 export default Home
+/* <Button><DownloadItem href="IidaKokkonen_cv.pdf" download>Download cv</DownloadItem></Button>*/
