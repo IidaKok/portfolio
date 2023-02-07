@@ -18,7 +18,7 @@ const Home = () => {
               Iida Kokkonen
             </Heading>
 
-            <h2>Software engineering student</h2>
+            <h2>Software Engineering student</h2>
             <BtnBackground>
               <Link to="/contact">
                 <Button>Contact me!</Button>
