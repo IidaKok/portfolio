@@ -7,10 +7,15 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-color: #F8F8FF;`;
+color: #F8F8FF;
+
+@media screen and (max-width: 600px) {
+    padding: 10px;
+    padding-top: 30px;
+}`;
 
 const Heading = styled.h1`
-font-size: clamp(3rem, 4vw, 6vw);
+font-size: 2em;
 font-weight: 400;
 margin: 0;
 padding: 0;
@@ -20,12 +25,20 @@ user-select: none;
 -webkit-user-select: none;
 -khtml-user-select: none;
 -moz-user-select: none;
--ms-user-select: none;`;
+-ms-user-select: none;
+
+@media screen and (min-width: 600px) {
+    font-size: 4em;
+}`;
 
 
 const Heading2 = styled.h2`
 text-decoration: underline #00ff99;
-font-size: 2em;`;
+font-size: 1.5em;
+
+@media screen and (min-width: 600px) {
+    font-size: 2em;
+}`;
 
 
 const Button = styled.button`

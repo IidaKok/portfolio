@@ -24,7 +24,7 @@ const About = () => {
                 </Context>
 
                 <Context>
-                    <Heading2>Experiance & Skills</Heading2>
+                    <Heading2>Experience & Skills</Heading2>
                     <Aside>
                         <TextLeft>
                             {aboutSkills.map((a) => (<Paragraph>{a}</Paragraph>))}

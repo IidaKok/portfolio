@@ -16,11 +16,20 @@
   box-sizing: border-box;
 }
 h1, h2 {
-  user-select: none;
+user-select: none;
 -webkit-user-select: none;
 -khtml-user-select: none;
 -moz-user-select: none;
 -ms-user-select: none;
+}
+@media screen and (max-width: 350px) {
+  
+  h1{
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18.72px;
+  }
 }
 
 a {

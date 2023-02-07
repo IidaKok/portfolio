@@ -11,7 +11,7 @@ const Contact = () => {
                 <Heading>Get in touch with me</Heading>
                 <Context>
                     <Paragraph>I am currently looking for an internship position. <br/>
-                        If you can offer me the opportunity to develop in your company, please contact me</Paragraph>
+                        If you can offer me the opportunity to develop in your company, please contact me.</Paragraph>
                     <List>
                         {contactInfo.map((info) => (
                             <Item>

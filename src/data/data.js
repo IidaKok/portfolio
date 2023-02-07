@@ -5,14 +5,14 @@ import ninja from "../images/ninjas_picture.png";
 import project from "../images/project.PNG";
 
 const about = [
-    "I am 26 years old Software Engineering student from Kuopio. I enjoy creating user-friendly websites and applications.",
-    "As a person, I am responsible and conscientious. I am excited to develop my skills and learn new things.",
-    "When I have some free time, I enjoy lying on a couch, knitting and watching movies."
+    "I'm a 26 years old Software Engineering student from Kuopio. I enjoy creating user-friendly websites and applications.",
+    "As a person, I'm responsible and conscientious. I'm excited to develop my skills and learn new things.",
+    "On my free time, I like lying on a couch, knitting and watching movies."
 ]
 const aboutSkills = [
-    "I have studied at Savonia University of Applied Sciences for 2,5 years and gained experience in C#, Java and JavaScript languages. Also SQL queries, Html, CSS, .NET and React.js have become familiar.",
+    "I have studied at Savonia University of Applied Sciences for 2,5 years and gained experience in C#, Java and JavaScript languages. Also SQL queries, Html, CSS, .NET and React.js have become familiar to me.",
       "I have graduated before as an Ict Technician in 2019. From my earlier degree I have experience, for example, on the server side, system support, telecommunications equipment installations and cabling.",
-      "I also have over two years of experience in customer service."
+      "I also have over two years experience in customer service."
 ]
 const skills = [
     {
@@ -98,7 +98,7 @@ const projects = [
     {
         name: "Management of cabin reservations",
         image: project,
-        description: "Group work for the Software Engineering course. I recommend taking a look at the frmVaraukset.cs and frmPalveluidenRaportointi.cs files",
+        description: "Group work for the Software Engineering course. I recommend taking a look at the frmVaraukset.cs and frmPalveluidenRaportointi.cs files.",
         languages: ["C#", "Sql"],
         github: "https://github.com/turunena/OhjelmistotuotantoProjekti"
     }
@@ -119,7 +119,7 @@ const contactInfo = [{
     text: "Connect in LinkedIn",
     name: "LinkedIn",
     icon: <FaLinkedin />,
-    link: "https://www.linkedin.com/in/iida-kokkonen-10b43423b/"
+    link: "https://www.linkedin.com/in/iida-kokkonen/"
 }
 ]
 export {skills, about, aboutSkills, projects, menuItems, contactInfo}

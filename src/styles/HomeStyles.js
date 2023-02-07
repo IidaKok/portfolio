@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
 const Picture = styled.img`
-display: block;
+display: flex;
 margin-left: auto;
 margin-right: auto;
-min-width: 60%;
-height: 100%;
+width: 100%;
+height: auto;
 border-style: outset;
 border: 4px solid #191a1a;
+
+
 `;
 
 

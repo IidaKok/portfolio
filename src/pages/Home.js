@@ -19,11 +19,10 @@ const Home = () => {
             </Heading>
 
             <h2>Software Engineering student</h2>
-            <BtnBackground>
-              <Link to="/contact">
+            <Link to="/contact">
                 <Button>Contact me!</Button>
               </Link>
-            </BtnBackground>
+            
 
           </Aside>
           <Aside>

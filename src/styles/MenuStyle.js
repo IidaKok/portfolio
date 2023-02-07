@@ -19,11 +19,13 @@ margin-left: 10px;
 const StyledLink = styled(Link)`
 color: #F8F8FF;
 text-decoration: none;
-font-size: clamp(1.5rem, 2vw, 3vw);
+font-size: 1.5em;
 transition: .2s all ease-in-out;
 display: flex;
 cursor: pointer;
-margin-top: 70px;
+margin-top: 40px;
+
+vertical-align: bottom;
 user-select: none;
 -webkit-user-select: none;
 -khtml-user-select: none;
@@ -36,11 +38,15 @@ user-select: none;
 }
 
 @media screen and (min-width: 750px) {
-  row-gap: 30px;
+  margin-top: 70px;
   transform: rotate(-90deg);
   transition: none;
-  font-size: clamp(1rem, 1.5vw, 2.5vw);
-  }`;
+  font-size: 1.5em;
+  }
+  @media screen and (max-width: 350px) {
+    margin-top: 15px;
+    font-size: 1em;
+    }`;
 
 //Toggle
 const StyledToggle = styled(FaBars)`
