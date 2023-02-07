@@ -4,7 +4,7 @@ import { about, aboutSkills } from "../data/data";
 import { StyledPage, Heading, StyledDiv, Context, Heading2, Paragraph } from "../styles/Common";
 import me from "../images/aboutpage_picture.jpeg";
 import { Picture, Aside, TextLeft, TextRight } from "../styles/AboutStyle";
-import {MdOpenInNew} from "react-icons/md";
+import { MdOpenInNew } from "react-icons/md";
 
 const About = () => {
     return (
@@ -38,10 +38,13 @@ const About = () => {
 
                 <Context>
                     <Heading2>Resume</Heading2>
-                    
-                    <a href="https://iidakok.github.io/portfolio/IidaKokkonen_cv.pdf" target="_blank"  rel="noreferrer">
-                        <Paragraph>Open resume in new tab <MdOpenInNew/></Paragraph>
-                    </a>
+
+                    <Paragraph>
+                        <a href="https://iidakok.github.io/portfolio/IidaKokkonen_cv.pdf" target="_blank" rel="noreferrer">
+                            Open resume <MdOpenInNew />
+                        </a>
+                    </Paragraph>
+
                 </Context>
             </StyledDiv>
         </StyledPage>
