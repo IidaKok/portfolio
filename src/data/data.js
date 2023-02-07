@@ -10,7 +10,7 @@ const about = [
     "When I have some free time, I enjoy lying on a couch, knitting and watching movies."
 ]
 const aboutSkills = [
-    "I have studied at Savonia University of Applied Sciences for 2,5 years and gained experience in C#, java and JavaScript languages. Also SQL queries, Html, CSS, .NET and React.js have become familiar.",
+    "I have studied at Savonia University of Applied Sciences for 2,5 years and gained experience in C#, Java and JavaScript languages. Also SQL queries, Html, CSS, .NET and React.js have become familiar.",
       "I have graduated before as an Ict Technician in 2019. From my earlier degree I have experience, for example, on the server side, system support, telecommunications equipment installations and cabling.",
       "I also have over two years of experience in customer service."
 ]
@@ -64,7 +64,7 @@ const skills = [
         icon: <SiMysql />
     },
     {
-        name: 'Intellj',
+        name: 'Intellij IDEA',
         icon: <SiIntellijidea/>
     },
     {
