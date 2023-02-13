@@ -9,7 +9,9 @@ height: auto;
 border-style: outset;
 border: 4px solid #191a1a;
 
-
+@media screen and (min-width: 1030px) {
+    width: 60%;
+}
 `;
 
 

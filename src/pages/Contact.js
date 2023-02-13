@@ -15,7 +15,7 @@ const Contact = () => {
                     <List>
                         {contactInfo.map((info) => (
                             <Item>
-                                <ItemLink href={info.link} target="_blank">
+                                <ItemLink href={info.link} target="_blank" rel="noreferrer">
                                     <Item>
                                     <p style={{fontSize: "50px", margin: "0"}}>{info.icon}</p>
                                     <p>{info.text}</p>

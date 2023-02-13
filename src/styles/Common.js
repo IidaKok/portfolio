@@ -15,7 +15,7 @@ color: #F8F8FF;
 }`;
 
 const Heading = styled.h1`
-font-size: 2em;
+font-size: 2.5em;
 font-weight: 400;
 margin: 0;
 padding: 0;
@@ -25,7 +25,7 @@ user-select: none;
 -webkit-user-select: none;
 -khtml-user-select: none;
 -moz-user-select: none;
--ms-user-select: none;
+-ms-user-select: none; 
 
 @media screen and (min-width: 600px) {
     font-size: 4em;
