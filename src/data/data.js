@@ -1,16 +1,21 @@
-import {FaReact, FaNode, FaLinux, FaGit, FaGithub, FaJava, FaHtml5, FaCss3, FaBootstrap, FaLinkedin, FaEnvelope} from 'react-icons/fa';
+import {FaReact, FaNode, FaLinux, FaGit, FaGithub, FaJava, FaHtml5, FaCss3, FaBootstrap, FaLinkedin, FaEnvelope, FaPython} from 'react-icons/fa';
 import {SiDotnet, SiVisualstudio, SiJavascript, SiMysql, SiIntellijidea, SiVirtualbox, SiJquery} from 'react-icons/si';
 import portfolio from "../images/portfolio_picture.png";
 import ninja from "../images/ninjas_picture.png";
 import project from "../images/project.PNG";
+import project2 from "../images/project2.PNG";
+import portfoliovideo from "../images/portfoliovideo.mp4";
+import ninjansivutvideo from "../images/ninjansivutvideo.mp4";
+import project1video from "../images/project1video.mp4";
+import project2video from "../images/project2video.mp4";
 
 const about = [
-    "I'm a 26 years old Software Engineering student from Kuopio. I enjoy creating user-friendly websites and applications.",
+    "I'm a 27 years old Software Engineering student from Kuopio. I enjoy creating user-friendly websites and applications.",
     "As a person, I'm responsible and conscientious. I'm excited to develop my skills and learn new things.",
     "On my free time, I like lying on a couch, knitting and watching movies."
 ]
 const aboutSkills = [
-    "I have studied at Savonia University of Applied Sciences for 2,5 years and gained experience in C#, Java and JavaScript languages. Also SQL queries, Html, CSS, .NET and React.js have become familiar to me.",
+    "I have studied at Savonia University of Applied Sciences for over 3 years and gained experience in C#, Java, JavaScript and Python languages. Also SQL queries, Html, CSS, .NET, React.js, Node.js, database management and agile methods in Azure have become familiar to me.",
       "I have graduated before as an Ict Technician in 2019. From my earlier degree I have experience, for example, on the server side, system support, telecommunications equipment installations and cabling.",
       "I also have over two years experience in customer service."
 ]
@@ -78,30 +83,45 @@ const skills = [
     {
         name: 'Bootstrap', 
         icon: <FaBootstrap/>
+    },
+    {
+        name: 'Python',
+        icon: <FaPython/>
     }
 ]
 const projects = [
     {
+        name: "Book archive",
+        image: project2,
+        video: project2video,
+        description: "Software Engineer 2 course group project, our objective was to develop a book archive for collectors of old books. My specific role involved creating the registration and login functionalities within the program.",
+        languages: ["Javascript", "Html", "Css", "React", "Node", "Sql"],
+        github: "https://github.com/IidaKok/groupb-project"
+    },
+    {
         name: "Portfolio",
         image: portfolio,
-        description: "I wanted to create a project that would show my skills and learn more about how to use react.",
+        video: portfoliovideo,
+        description: "I created this project to further my knowledge and understanding of React.",
         languages: ["Javascript", "Html", "Css", "React"],
         github: "https://github.com/IidaKok/portfolio"
     },
     {
-        name: "Ninja's website",
-        image: ninja,
-        description: "I created this website in Web and mobile interfaces course. It's responsive and designed for kids.",
-        languages: ["Html", "Css"],
-        github: "https://github.com/IidaKok/Iidakok.github.io"
-    },
-    {
         name: "Management of cabin reservations",
         image: project,
-        description: "Group work for the Software Engineering course. I recommend taking a look at the frmVaraukset.cs and frmPalveluidenRaportointi.cs files.",
+        video: project1video,
+        description: "Software Production 1 course group project, the task was to create an application for managing holiday cottage bookings according to the given request for proposal. My responsibility involved managing cabin reservations and reporting the reserved accommodations and services.",
         languages: ["C#", "Sql"],
-        github: "https://github.com/turunena/OhjelmistotuotantoProjekti"
-    }
+        github: "https://github.com/IidaKok/Ohjelmistotuotanto1"
+    },
+    {
+        name: "Ninja's website",
+        image: ninja,
+        video: ninjansivutvideo,
+        description: "A website made in the Web and mobile interfaces course that is responsive and designed for children.",
+        languages: ["Html", "Css"],
+        github: "https://github.com/IidaKok/Iidakok.github.io"
+    } 
 ]
 const menuItems = [
     { text: "Home", to: "/" },

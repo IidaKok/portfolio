@@ -4,16 +4,6 @@ import './index.css';
 import App from './App';
 import 'animate.css';
 import './App.css';
-/*ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";*/
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
