@@ -8,6 +8,7 @@ import portfoliovideo from "../images/portfoliovideo.mp4";
 import ninjansivutvideo from "../images/ninjansivutvideo.mp4";
 import project1video from "../images/project1video.mp4";
 import project2video from "../images/project2video.mp4";
+import calculatorvideo from "../images/calculatorvideo.mp4";
 
 const about = [
     "I'm a 27 years old Software Engineering student from Kuopio. I enjoy creating user-friendly websites and applications.",
@@ -90,6 +91,13 @@ const skills = [
     }
 ]
 const projects = [
+    {
+        name: "Calculator app",
+        video: calculatorvideo,
+        description: "A simple calculator app for Android.",
+        languages: ["Java"],
+        github: "https://github.com/IidaKok/MyCalculator"
+    },
     {
         name: "Book archive",
         image: project2,
